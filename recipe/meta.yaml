@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.ifremer.fr/jobard/jobard_api/-/archive/{{ version }}/jobard_api-{{ version }}.tar.gz
-  sha256: e1132d58299dc46c0def5d382521e447472cb1f82c30df50c52228dc2c206dde
+  sha256: 40a6f5b6a58013b1c1a01c67f266ba30eb411667ce7a3535bf8a203fe3202484
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
