@@ -1,11 +1,11 @@
-About jobard-api
-================
+About jobard-api-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jobard-api-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gitlab.ifremer.fr/jobard/jobard_api
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jobard-api-feedstock/blob/main/LICENSE.txt)
 
 Summary: Jobard API to submit and follow the execution of jobs.
 
