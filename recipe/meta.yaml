@@ -1,5 +1,7 @@
 {% set name = "jobard-api" %}
 {% set version = "1.5.10" %}
+{% set python_min = "3.9" %}
+
 
 package:
   name: {{ name|lower }}
@@ -16,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry-core
     - poetry-dynamic-versioning
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - fastapi >=0.7
     - sqlalchemy >=1.4.25
     - psycopg2-binary >=2.8.6
