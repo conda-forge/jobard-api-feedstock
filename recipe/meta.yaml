@@ -1,5 +1,7 @@
 {% set name = "jobard-api" %}
-{% set version = "1.5.8" %}
+{% set version = "1.5.10" %}
+{% set python_min = "3.9" %}
+
 
 package:
   name: {{ name|lower }}
@@ -7,7 +9,7 @@ package:
 
 source:
   url: https://gitlab.ifremer.fr/jobard/jobard_api/-/archive/{{ version }}/jobard_api-{{ version }}.tar.gz
-  sha256: 56a68654960cd28ed23b4cc706b132369d25c8f44ce77452b7b5afff2b88401e
+  sha256: 4568cba462753770d8adfc4e9dc4ed408ab07e6048b5da6264298d67e447d4b2
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -16,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry-core
     - poetry-dynamic-versioning
 
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - fastapi >=0.7
     - sqlalchemy >=1.4.25
     - psycopg2-binary >=2.8.6
