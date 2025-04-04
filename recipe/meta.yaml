@@ -1,5 +1,5 @@
 {% set name = "jobard-api" %}
-{% set version = "1.5.10" %}
+{% set version = "1.5.11" %}
 {% set python_min = "3.9" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://gitlab.ifremer.fr/jobard/jobard_api/-/archive/{{ version }}/jobard_api-{{ version }}.tar.gz
-  sha256: 4568cba462753770d8adfc4e9dc4ed408ab07e6048b5da6264298d67e447d4b2
+  sha256: 1f50cc74d1359d2d3fc45e001697dbbc039241e88c934669445127b4c9813c26
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
